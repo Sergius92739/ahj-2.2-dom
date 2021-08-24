@@ -115,10 +115,11 @@ export default class Table {
   }
 
   /**
-   * Метод запускает сортировку таблицы, с переданной в миллисекундах переодичностью
+   * Метод запускает сортировку таблицы, с переданной в миллисекундах переодичностью,
+   * по умолчанию установлена переодичность 2000мс.
    * @param {number} interval миллисекунды
    */
-  startSorting(interval) {
+  startSorting(interval = 2000) {
     if (!interval) return;
     setInterval(() => {
       this.getSort(this.dataSort[this.idx]);

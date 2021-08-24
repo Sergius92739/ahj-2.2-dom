@@ -5,4 +5,4 @@ const table = new Table(data);
 
 table.bindToDOM(document.getElementById('container'));
 table.drawTable();
-table.startSorting(2000);
+table.startSorting();
